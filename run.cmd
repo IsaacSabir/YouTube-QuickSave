@@ -1,1 +1,1 @@
-python main.py
+start /B /MIN pythonw main.py

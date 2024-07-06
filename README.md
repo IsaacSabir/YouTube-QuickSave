@@ -1,15 +1,15 @@
-# YouTube QuickSave
+# YouTube QuickSave v1.4.240705
 
-**Version**: 1.1.240623
-
-**Description**: YouTube QuickSave is a Python script designed to download YouTube videos along with subtitles in various languages, and merge them into a single MKV file.
+YouTube QuickSave is a user-friendly application for downloading YouTube videos along with their subtitles. It offers a straightforward interface for downloading videos, renaming subtitle files, and merging them into a single MKV file using MKVMerge.
 
 ## Features
 
-- Downloads YouTube videos in 1080p quality (or lower if not available).
-- Downloads chapters and merge them into the video.
-- Downloads subtitles in multiple languages: English, Arabic, Russian (request more languages if you want).
-- Merges video and subtitle files into a single MKV file using MKVToolNix.
+- Download YouTube videos in the best available format (up to 1080p).
+- Download and merge chapters into the video.
+- Automatically download subtitles in multiple languages.
+- Rename subtitle files to ensure correct language codes.
+- Merge video and subtitle files into a single MKV file.
+- Log activities for later reference.
 
 ## Requirements
 
@@ -20,21 +20,18 @@
 
 ## Installation
 
-1. **Clone the repository or download the script:**
-
-    ```sh
+1. **Clone the repository:**
+    ```bash
     git clone https://github.com/IsaacSabir/YouTube-QuickSave.git
-    cd YouTube-QuickSave
+    cd YouTubeQuickSave
     ```
 
-2. **Install the required Python packages:**
-
-    ```sh
+2. **Install required Python packages:**
+    ```bash
     pip install yt-dlp
     ```
 
-3. **Install MKVToolNix:**
-
+3. **Download and install MKVToolNix:**
     - Download and install MKVToolNix from [here](https://mkvtoolnix.download/downloads.html).
     - Ensure `mkvmerge.exe` is located in `C:\Program Files\MKVToolNix\mkvmerge.exe` or update the path in the script accordingly.
 
@@ -45,16 +42,25 @@
 
 ## Usage
 
-1. **Run the script:**
-
-    ```sh
+1. **Run the application:**
+    ```bash
     python main.py
     ```
 
-2. **Follow the prompts:**
+2. **Set MKVMerge Path:**
+    - Click on "Browse" next to the MKVMerge Path field.
+    - Select the `mkvmerge.exe` executable from the MKVToolNix installation directory.
 
-    - Enter a valid YouTube URL (video or playlist).
-    - The script will download the video and subtitles, then merge them into an MKV file.
+3. **Set Download Directory:**
+    - Click on "Browse" next to the Download Directory field.
+    - Select or create a directory where you want to save downloaded videos.
+
+4. **Download a YouTube video:**
+    - Paste the YouTube URL into the YouTube URL field.
+    - Click the "Download" button.
+
+5. **View Console Output:**
+    - The console at the bottom of the application will display the download progress and status.
 
 ## How It Works
 
@@ -77,17 +83,32 @@
 ## Logging
 
 - Logs are stored in the `Logs` directory.
-- Each log file is named with the current date (`YYYY-MM-DD.log`).
+- Each log file is named with the current date (`YYYY-MM-DD.log`) (e.g., `2024-07-05.log`).
 
 ## Known Issues
 
 - Ensure you have the necessary permissions to write to the directories.
 - Make sure the paths for `mkvmerge` and `ffmpeg` are correctly set.
 
+## Troubleshooting
+
+- Ensure you have a stable internet connection and not using VPN.
+- Verify that the MKVMerge path is correctly set to the `mkvmerge.exe` file.
+- Check the logs for detailed error messages if something goes wrong.
+
 ## Contributing
 
-Feel free to fork the project, make improvements, and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Submit a pull request.
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+- [MKVToolNix](https://mkvtoolnix.download/)
+- [tkinter](https://docs.python.org/3/library/tkinter.html)
