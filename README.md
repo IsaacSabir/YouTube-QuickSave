@@ -1,4 +1,4 @@
-![YouTube-QuickSave GUI](https://i.imgur.com/TMBiati.png)
+![YouTube-QuickSave GUI](https://i.imgur.com/ATyeZb6.png)
 
 # YouTube QuickSave v1.4.240705
 
