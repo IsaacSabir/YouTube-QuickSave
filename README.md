@@ -1,3 +1,5 @@
+![YouTube-QuickSave GUI](https://i.imgur.com/TMBiati.png)
+
 # YouTube QuickSave v1.4.240705
 
 YouTube QuickSave is a user-friendly application for downloading YouTube videos along with their subtitles. It offers a straightforward interface for downloading videos, renaming subtitle files, and merging them into a single MKV file using MKVMerge.
